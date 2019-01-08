@@ -2,7 +2,6 @@
   <section>
     <rocket
     v-for="rocket in rockets"
-    :removeRocket="removeRocket"
     :rocket="rocket" >
    </rocket>
   </section>
@@ -13,7 +12,7 @@
 import Rocket from "@/components/Rocket"
 export default {
   name:'rocket-list',
-  props: ['rockets','removeRocket'],
+  props: ['rockets'],
   components :{
     Rocket,
   }
